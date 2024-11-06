@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Wed Nov  6 14:26:24 2024
+# Process ID: 28484
+# Current directory: Z:/AMD_FPGA/LED_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9968 Z:\AMD_FPGA\LED_1\LED_1.xpr
+# Log file: Z:/AMD_FPGA/LED_1/vivado.log
+# Journal file: Z:/AMD_FPGA/LED_1\vivado.jou
+# Running On        :Anivice_G15
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26120
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency     :2304 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :34077 MB
+# Swap memory       :7247 MB
+# Total Virtual     :41325 MB
+# Available Virtual :24056 MB
+#-----------------------------------------------------------
+start_gui
+open_project Z:/AMD_FPGA/LED_1/LED_1.xpr
+file mkdir Z:/AMD_FPGA/LED_1/LED_1.srcs/sources_1/new
+close [ open Z:/AMD_FPGA/LED_1/LED_1.srcs/sources_1/new/flash_led.v w ]
+add_files Z:/AMD_FPGA/LED_1/LED_1.srcs/sources_1/new/flash_led.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+open_run impl_1
+file mkdir Z:/AMD_FPGA/LED_1/LED_1.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open Z:/AMD_FPGA/LED_1/LED_1.srcs/sim_1/new/tb_flash_led.v w ]
+add_files -fileset sim_1 Z:/AMD_FPGA/LED_1/LED_1.srcs/sim_1/new/tb_flash_led.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+set_property target_simulator ModelSim [current_project]
+launch_simulation -install_path D:/modeltech64_10.7/win64

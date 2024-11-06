@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Wed Nov  6 22:17:03 2024
+# Process ID: 3756
+# Current directory: Z:/AMD_FPGA/LED_1/LED_1.runs/synth_1
+# Command line: vivado.exe -log flash_led.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source flash_led.tcl
+# Log file: Z:/AMD_FPGA/LED_1/LED_1.runs/synth_1/flash_led.vds
+# Journal file: Z:/AMD_FPGA/LED_1/LED_1.runs/synth_1\vivado.jou
+# Running On        :Anivice_G15
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26120
+# Processor Detail  :11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz
+# CPU Frequency     :2304 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :34077 MB
+# Swap memory       :7247 MB
+# Total Virtual     :41325 MB
+# Available Virtual :13161 MB
+#-----------------------------------------------------------
+source flash_led.tcl -notrace

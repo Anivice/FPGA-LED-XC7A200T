@@ -1,0 +1,16 @@
+# do {tb_flash_led_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.tb_flash_led xil_defaultlib.glbl 
+# Start time: 20:35:50 on Nov 06,2024
+# Loading xil_defaultlib.tb_flash_led
+# Loading xil_defaultlib.flash_led
+# Loading xil_defaultlib.glbl
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+add wave -position insertpoint sim:/tb_flash_led/flash_led/*
+restart
+run
+# End time: 22:54:47 on Nov 06,2024, Elapsed time: 2:18:57
+# Errors: 0, Warnings: 0
